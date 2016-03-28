@@ -12,16 +12,23 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by chenli on 3/25/16.
  */
 public class LoginStepdefs {
-    public static WebDriver driver;
+    private WebDriver driver;
+    private WebDriverWait wait;
+
     @Before
     public void setUp() throws Exception{
         System.setProperty("webdriver.chrome.driver","tools/webdriver/chromedriver");
         driver = new ChromeDriver();
+        wait = new WebDriverWait(driver, 3);
     }
 
     @After
@@ -31,25 +38,27 @@ public class LoginStepdefs {
 
     @Given("^User is on Home Page$")
     public void userIsOnHomePage() throws Throwable {
-        //driver = new FirefoxDriver();
         driver.get("https://www.amazon.cn");
     }
 
     @When("^User Navigate to Login Page$")
     public void userNavigateToLoginPage() throws Throwable {
-        //driver.findElement(By.linkText("立即登录"));
-        driver.findElement(By.xpath("//*[@id=\"rhf-container\"]/div/div[2]/div[1]/a"));
-        //driver.findElement(By.cssSelector("a[class=\"action-button\"]"));
+        driver.findElement(By.cssSelector("a[data-nav-ref=nav_ya_signin]")).click();
 
     }
 
     @And("^User enters UserName and Password$")
     public void userEntersUserNameAndPassword() throws Throwable {
-        System.out.println("test");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_email")));
+        driver.findElement(By.id("ap_email")).sendKeys("382782960@qq.com");
+        driver.findElement(By.id("ap_password")).sendKeys("Cherry1223Lc");
+        driver.findElement(By.id("signInSubmit")).click();
     }
 
-    @Then("^Navigate to Personal Home Page$")
-    public void navigateToPersonalHomePage() throws Throwable {
-        System.out.println("test");
+    @Then("^Back to Home Page$")
+    public void backToHomePage() throws Throwable {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nav-logo")));
+        System.out.println(driver.getCurrentUrl());
+        driver.getCurrentUrl().equals("https://www.amazon.cn/?ref_=nav_signin&");
     }
 }
