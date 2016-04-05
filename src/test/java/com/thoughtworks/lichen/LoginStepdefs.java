@@ -55,8 +55,8 @@ public class LoginStepdefs {
     @And("^User enters UserName and Password$")
     public void userEntersUserNameAndPassword() throws Throwable {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ap_email")));
-        driver.findElement(By.id("ap_email")).sendKeys("382782960@qq.com");
-        driver.findElement(By.id("ap_password")).sendKeys("Cherry1223Lc");
+        driver.findElement(By.id("ap_email")).sendKeys("email address");
+        driver.findElement(By.id("ap_password")).sendKeys("password");
         driver.findElement(By.id("signInSubmit")).click();
     }
 
