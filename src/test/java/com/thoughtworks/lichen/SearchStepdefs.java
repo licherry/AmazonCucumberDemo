@@ -21,31 +21,30 @@ import java.util.concurrent.TimeUnit;
  * Created by chenli on 4/1/16.
  */
 public class SearchStepdefs {
+
     private WebDriver driver;
 
-//    @Before
-//    public void setUp() throws Exception{
-//        System.setProperty("webdriver.chrome.driver","tools/webdriver/chromedriver");
-//        driver = new ChromeDriver();
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//    }
-
-//    @After
-//    public void tearDown() throws Exception{
-//        driver.close();
-//    }
-
-    @Given("^User is in Home Page$")
-    public void userIsOnHomePage() throws Throwable {
-        System.setProperty("webdriver.chrome.driver","tools/webdriver/chromedriver");
+    @Before
+    public void beforeScenario() {
+        System.setProperty("webdriver.chrome.driver", "tools/webdriver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    }
+
+    @After
+    public void afterScenario() {
+        driver.quit();
+        driver = null;
+    }
+
+    @Given("^User is on Home Page$")
+    public void userIsOnHomePage() throws Throwable {
         driver.get("https://www.amazon.cn");
     }
 
-    @When("^Input name in the search field$")
-    public void inputNameInTheSearchField() throws Throwable {
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("测试");
+    @When("^Input \"([^\"]*)\"$")
+    public void input(String name) throws Throwable {
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys(name);
     }
 
     @And("^click search button$")
@@ -58,10 +57,11 @@ public class SearchStepdefs {
         List<WebElement> results = driver.findElements(By.cssSelector("#s-results-list-atf li"));
         System.out.println("The size of the list: " + results.size());
         Assert.assertNotNull(results.size());
-//        for(int i=0; i<=results.size()-1;i++){
-//            WebElement ele = results.get(i);
-//            System.out.println(ele.getText());
-//        }
-        driver.close();
+        for (int i = 0; i <= results.size() - 1; i++) {
+            WebElement ele = results.get(i);
+            System.out.println(ele.getText());
+        }
     }
+
+
 }
