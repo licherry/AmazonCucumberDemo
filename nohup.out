@@ -1,0 +1,309 @@
+Running from: /Applications/Jenkins/jenkins.war
+webroot: $user.home/.jenkins
+Apr 23, 2016 4:20:16 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Apr 23, 2016 4:20:16 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: jetty-winstone-2.9
+Apr 23, 2016 4:20:18 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Jenkins home directory: /Users/chenli/.jenkins found at: $user.home/.jenkins
+Apr 23, 2016 4:20:19 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started SelectChannelConnector@0.0.0.0:8080
+Apr 23, 2016 4:20:19 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+Apr 23, 2016 4:20:19 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:20:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:20:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:20:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:20:28 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:20:29 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:20:30 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Apr 23, 2016 4:20:31 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 52269
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:20:31 PM hudson.UDPBroadcastThread run
+INFO: Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:20:31 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:20:31 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Apr 23, 2016 4:20:48 PM hudson.model.UpdateSite updateData
+INFO: Obtained the latest update center data file for UpdateSource default
+Apr 23, 2016 4:20:50 PM hudson.model.DownloadService$Downloadable load
+INFO: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+Apr 23, 2016 4:20:53 PM hudson.model.DownloadService$Downloadable load
+INFO: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+Apr 23, 2016 4:20:58 PM hudson.model.DownloadService$Downloadable load
+INFO: Obtained the updated data file for hudson.tools.JDKInstaller
+Apr 23, 2016 4:20:58 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 27,305 ms
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of credentials for plugin git
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of icon-shim for plugin credentials
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of git-client for plugin git
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of ssh-credentials for plugin git-client
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Dependent install of credentials for plugin ssh-credentials already added, skipping
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Dependent install of ssh-credentials for plugin git already added, skipping
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of scm-api for plugin git
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of mailer for plugin git
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of matrix-project for plugin git
+Apr 23, 2016 4:22:10 PM hudson.model.UpdateSite$Plugin deploy
+WARNING: Adding dependent install of junit for plugin matrix-project
+Apr 23, 2016 4:22:28 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Icon Shim Plugin on behalf of anonymous
+Apr 23, 2016 4:22:33 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Icon Shim Plugin
+Apr 23, 2016 4:22:48 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Credentials Plugin on behalf of anonymous
+Apr 23, 2016 4:22:52 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Credentials Plugin
+Apr 23, 2016 4:22:53 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of SSH Credentials Plugin on behalf of anonymous
+Apr 23, 2016 4:22:55 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading SSH Credentials Plugin
+Apr 23, 2016 4:22:55 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Git client plugin on behalf of anonymous
+Apr 23, 2016 4:22:59 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Git client plugin
+Apr 23, 2016 4:34:01 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of SCM API Plugin on behalf of anonymous
+Apr 23, 2016 4:34:04 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading SCM API Plugin
+Apr 23, 2016 4:34:12 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Mailer Plugin on behalf of anonymous
+Apr 23, 2016 4:34:16 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Mailer Plugin
+Apr 23, 2016 4:34:25 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of JUnit Plugin on behalf of anonymous
+Apr 23, 2016 4:34:33 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading JUnit Plugin
+Apr 23, 2016 4:34:57 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Matrix Project Plugin on behalf of anonymous
+Apr 23, 2016 4:34:59 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Matrix Project Plugin
+Apr 23, 2016 4:35:15 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Git plugin on behalf of anonymous
+Apr 23, 2016 4:35:17 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Git plugin
+Apr 23, 2016 4:39:47 PM hudson.model.UpdateCenter doSafeRestart
+INFO: Scheduling Jenkins reboot
+Apr 23, 2016 4:39:47 PM jenkins.model.Jenkins$25 run
+INFO: Restart in 10 seconds
+Apr 23, 2016 4:39:57 PM jenkins.model.Jenkins$25 run
+SEVERE: Restarting VM as requested by anonymous
+Apr 23, 2016 4:39:58 PM hudson.TcpSlaveAgentListener shutdown
+WARNING: Failed to close down TCP port
+java.io.IOException: Unknown error: 316
+	at sun.nio.ch.NativeThread.signal(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+	at hudson.TcpSlaveAgentListener.shutdown(TcpSlaveAgentListener.java:119)
+	at jenkins.model.Jenkins.cleanUp(Jenkins.java:2863)
+	at hudson.lifecycle.UnixLifecycle.restart(UnixLifecycle.java:70)
+	at jenkins.model.Jenkins$25.run(Jenkins.java:3471)
+
+Running from: /Applications/Jenkins/jenkins.war
+webroot: $user.home/.jenkins
+Apr 23, 2016 4:39:59 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Apr 23, 2016 4:39:59 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: jetty-winstone-2.9
+Apr 23, 2016 4:40:00 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Jenkins home directory: /Users/chenli/.jenkins found at: $user.home/.jenkins
+Apr 23, 2016 4:40:01 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started SelectChannelConnector@0.0.0.0:8080
+Apr 23, 2016 4:40:01 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+Apr 23, 2016 4:40:01 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:40:02 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:40:03 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:40:03 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:40:03 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:40:05 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Apr 23, 2016 4:40:05 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 8 ms
+Apr 23, 2016 4:40:05 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 52398
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:40:05 PM hudson.UDPBroadcastThread run
+INFO: Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:40:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:40:05 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Apr 23, 2016 4:51:37 PM hudson.model.Run execute
+INFO: AmazonDemo #1 main build action completed: SUCCESS
+Apr 23, 2016 4:53:37 PM hudson.model.UpdateCenter doSafeRestart
+INFO: Scheduling Jenkins reboot
+Apr 23, 2016 4:54:56 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Cucumber-jvm reports on behalf of anonymous
+Apr 23, 2016 4:55:07 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Cucumber-jvm reports
+Apr 23, 2016 4:56:04 PM hudson.model.UpdateCenter$DownloadJob run
+SEVERE: Failed to install Cucumber-jvm reports
+hudson.util.IOException2: Failed to download from http://updates.jenkins-ci.org/download/plugins/cucumber-reports/2.2.0/cucumber-reports.hpi (redirected to: http://ftp.tsukuba.wide.ad.jp/software/jenkins/plugins/cucumber-reports/2.2.0/cucumber-reports.hpi)
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:821)
+	at hudson.model.UpdateCenter$DownloadJob._run(UpdateCenter.java:1183)
+	at hudson.model.UpdateCenter$InstallationJob._run(UpdateCenter.java:1364)
+	at hudson.model.UpdateCenter$DownloadJob.run(UpdateCenter.java:1161)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:110)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Inconsistent file length: expected 3799547 but only got 881029
+	at hudson.model.UpdateCenter$UpdateCenterConfiguration.download(UpdateCenter.java:804)
+	... 7 more
+
+Apr 23, 2016 4:56:04 PM jenkins.model.Jenkins$25 run
+INFO: Restart in 10 seconds
+Apr 23, 2016 4:56:15 PM jenkins.model.Jenkins$25 run
+SEVERE: Restarting VM as requested by anonymous
+Apr 23, 2016 4:56:16 PM hudson.TcpSlaveAgentListener shutdown
+WARNING: Failed to close down TCP port
+java.io.IOException: Unknown error: 316
+	at sun.nio.ch.NativeThread.signal(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+	at hudson.TcpSlaveAgentListener.shutdown(TcpSlaveAgentListener.java:119)
+	at jenkins.model.Jenkins.cleanUp(Jenkins.java:2863)
+	at hudson.lifecycle.UnixLifecycle.restart(UnixLifecycle.java:70)
+	at jenkins.model.Jenkins$25.run(Jenkins.java:3471)
+
+Running from: /Applications/Jenkins/jenkins.war
+webroot: $user.home/.jenkins
+Apr 23, 2016 4:56:16 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+Apr 23, 2016 4:56:16 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: jetty-winstone-2.9
+Apr 23, 2016 4:56:17 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Jenkins home directory: /Users/chenli/.jenkins found at: $user.home/.jenkins
+Apr 23, 2016 4:56:18 PM org.eclipse.jetty.util.log.JavaUtilLog info
+INFO: Started SelectChannelConnector@0.0.0.0:8080
+Apr 23, 2016 4:56:18 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v2.0 running: controlPort=disabled
+Apr 23, 2016 4:56:18 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:56:18 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:56:18 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:56:18 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:56:18 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:56:21 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+Apr 23, 2016 4:56:21 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 2 ms
+Apr 23, 2016 4:56:21 PM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 52721
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:56:21 PM hudson.UDPBroadcastThread run
+INFO: Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 4:56:21 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 4:56:21 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+Apr 23, 2016 5:21:06 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of Cucumber-jvm reports on behalf of anonymous
+Apr 23, 2016 5:21:09 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading Cucumber-jvm reports
+Apr 23, 2016 5:25:57 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load /Users/chenli/.jenkins/plugins/cucumber-reports.jpi
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Apr 23, 2016 5:25:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Apr 23, 2016 5:25:57 PM hudson.PluginManager dynamicLoad
+INFO: Plugin cucumber-reports:2.2.0 dynamically installed
+Apr 23, 2016 5:25:57 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: Cucumber-jvm reports
+Apr 23, 2016 5:29:01 PM hudson.model.Run execute
+INFO: AmazonDemo #2 main build action completed: SUCCESS
+Apr 23, 2016 5:50:01 PM hudson.model.Run execute
+INFO: AmazonDemo #3 main build action completed: SUCCESS
+2016-04-23 17:50:01,722 Executor #1 for master : executing AmazonDemo #3 INFO Log4j appears to be running in a Servlet environment, but there's no log4j-web module available. If you want better web container support, please add the log4j-web JAR to your web archive or server lib directory.
+Apr 23, 2016 6:26:00 PM hudson.model.Run execute
+INFO: SignUpDemo #1 main build action completed: SUCCESS
+Apr 23, 2016 6:28:31 PM hudson.model.Run execute
+INFO: SignUpDemo #2 main build action completed: FAILURE
+Apr 23, 2016 6:31:42 PM jenkins.model.Jenkins doExit
+SEVERE: Shutting down VM as requested by anonymous from 0:0:0:0:0:0:0:1
