@@ -27,7 +27,7 @@ public class SearchStepdefs {
 
     @Before
     public void beforeScenario() {
-        System.setProperty("webdriver.chrome.driver", "tools/webdriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "tools/webdriver/chromedriver_2.31");
         driver = new ChromeDriver();
 //        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
